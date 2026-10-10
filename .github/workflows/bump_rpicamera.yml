@@ -5,6 +5,11 @@ on:
   - cron: '4 5 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
 jobs:
   bump_rpicamera:
     runs-on: ubuntu-22.04

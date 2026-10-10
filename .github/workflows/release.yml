@@ -5,6 +5,12 @@ on:
     tags:
     - 'v*'
 
+permissions:
+  contents: write
+  actions: write
+  issues: write
+  pull-requests: write
+
 jobs:
   binaries:
     runs-on: ubuntu-22.04
